@@ -1,3 +1,12 @@
+# -- local rules -------------------------------------------------------------------
+
+### direnv ###
+
+.envrc.*
+!.envrc.*.template
+
+# -- end local rules ---------------------------------------------------------------
+
 # Created by https://www.toptal.com/developers/gitignore/api/yarn
 # Edit at https://www.toptal.com/developers/gitignore?templates=yarn
 
@@ -19,4 +28,3 @@
 # .pnp.*
 
 # End of https://www.toptal.com/developers/gitignore/api/yarn
-

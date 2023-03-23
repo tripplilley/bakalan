@@ -1,5 +1,5 @@
 {
-  "name": "bakalan",
+  "name": "@tripplilley/bakalan",
   "packageManager": "yarn@3.5.0",
   "private": true,
   "workspaces": [
