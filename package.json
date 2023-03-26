@@ -6,6 +6,10 @@
   "workspaces": [
     "projects/*"
   ],
+  "scripts": {
+    "build": "echo NOP",
+    "build:docs": "yarn workspaces foreach -vR --topological-dev --from '@tripplilley/bakalan-libro' run build-docs"
+  },
   "devDependencies": {
     "docsify-cli": "^4.4.4"
   }
