@@ -14,12 +14,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "@tripplilley/bakalan",\
         "reference": "workspace:."\
+      },\
+      {\
+        "name": "@tripplilley/bakalan-kamusta",\
+        "reference": "workspace:projects/kamusta"\
+      },\
+      {\
+        "name": "@tripplilley/bakalan-libro",\
+        "reference": "workspace:projects/libro"\
+      },\
+      {\
+        "name": "@tripplilley/bakalan-pagbati",\
+        "reference": "workspace:projects/pagbati"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["@tripplilley/bakalan", ["workspace:."]]\
+      ["@tripplilley/bakalan", ["workspace:."]],\
+      ["@tripplilley/bakalan-kamusta", ["workspace:projects/kamusta"]],\
+      ["@tripplilley/bakalan-libro", ["workspace:projects/libro"]],\
+      ["@tripplilley/bakalan-pagbati", ["workspace:projects/pagbati"]]\
     ],\
     "fallbackPool": [\
       [\
@@ -45,6 +60,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       [\
         "@tootallnate/once",\
         "npm:2.0.0"\
+      ],\
+      [\
+        "@tripplilley/bakalan-kamusta",\
+        "workspace:projects/kamusta"\
+      ],\
+      [\
+        "@tripplilley/bakalan-libro",\
+        "workspace:projects/libro"\
+      ],\
+      [\
+        "@tripplilley/bakalan-pagbati",\
+        "workspace:projects/pagbati"\
       ],\
       [\
         "@types/keyv",\
@@ -1098,6 +1125,36 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@tripplilley/bakalan", "workspace:."],\
             ["docsify-cli", "npm:4.4.4"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@tripplilley/bakalan-kamusta", [\
+        ["workspace:projects/kamusta", {\
+          "packageLocation": "./projects/kamusta/",\
+          "packageDependencies": [\
+            ["@tripplilley/bakalan-kamusta", "workspace:projects/kamusta"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@tripplilley/bakalan-libro", [\
+        ["workspace:projects/libro", {\
+          "packageLocation": "./projects/libro/",\
+          "packageDependencies": [\
+            ["@tripplilley/bakalan-libro", "workspace:projects/libro"],\
+            ["@tripplilley/bakalan-kamusta", "workspace:projects/kamusta"],\
+            ["@tripplilley/bakalan-pagbati", "workspace:projects/pagbati"],\
+            ["docsify-cli", "npm:4.4.4"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@tripplilley/bakalan-pagbati", [\
+        ["workspace:projects/pagbati", {\
+          "packageLocation": "./projects/pagbati/",\
+          "packageDependencies": [\
+            ["@tripplilley/bakalan-pagbati", "workspace:projects/pagbati"]\
           ],\
           "linkType": "SOFT"\
         }]\

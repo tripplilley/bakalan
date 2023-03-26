@@ -55,6 +55,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tripplilley/bakalan-kamusta@^0.0.0, @tripplilley/bakalan-kamusta@workspace:projects/kamusta":
+  version: 0.0.0-use.local
+  resolution: "@tripplilley/bakalan-kamusta@workspace:projects/kamusta"
+  languageName: unknown
+  linkType: soft
+
+"@tripplilley/bakalan-libro@workspace:projects/libro":
+  version: 0.0.0-use.local
+  resolution: "@tripplilley/bakalan-libro@workspace:projects/libro"
+  dependencies:
+    "@tripplilley/bakalan-kamusta": ^0.0.0
+    "@tripplilley/bakalan-pagbati": ^0.0.0
+    docsify-cli: ^4.4.4
+  languageName: unknown
+  linkType: soft
+
+"@tripplilley/bakalan-pagbati@^0.0.0, @tripplilley/bakalan-pagbati@workspace:projects/pagbati":
+  version: 0.0.0-use.local
+  resolution: "@tripplilley/bakalan-pagbati@workspace:projects/pagbati"
+  languageName: unknown
+  linkType: soft
+
 "@tripplilley/bakalan@workspace:.":
   version: 0.0.0-use.local
   resolution: "@tripplilley/bakalan@workspace:."
