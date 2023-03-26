@@ -1,0 +1,15 @@
+{
+  "name": "@tripplilley/bakalan-libro",
+  "version": "0.0.0",
+  "packageManager": "yarn@3.5.0",
+  "private": true,
+  "scripts": {
+    "build": "echo NOP",
+    "build-docs": "echo 'NOP (docs)'"
+  },
+  "devDependencies": {
+    "@tripplilley/bakalan-kamusta": "^0.0.0",
+    "@tripplilley/bakalan-pagbati": "^0.0.0",
+    "docsify-cli": "^4.4.4"
+  }
+}
