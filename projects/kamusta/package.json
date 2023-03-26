@@ -1,0 +1,10 @@
+{
+  "name": "@tripplilley/bakalan-kamusta",
+  "version": "0.0.0",
+  "packageManager": "yarn@3.5.0",
+  "private": true,
+  "scripts": {
+    "build": "echo NOP",
+    "build-docs": "echo 'NOP (docs)'"
+  }
+}
